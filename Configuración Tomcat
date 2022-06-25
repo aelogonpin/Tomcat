@@ -1,0 +1,7 @@
+Respecto a la configuracion de Tomcat, este tendra que ser instalado mediante
+la java- jdk compatible con el tomcat y el propio binario del tomcat.
+Estos pueden ser descargados desde la propia web de cada uno de las empresas
+
+A todos los archivos que conformen los binarios tendran que tener cambiado los
+permisos y de paso en el systemd tendra que crear un fichero:
+tomcat.service y copiar lo que hay en el fichero de mi git "tomcat.service".

@@ -13,7 +13,9 @@ Enviroment="JAVA_OPTS=-Djava.security.egd=file:///dev/urandom"
 Environment="CATALINA_BASE=/opt/tomcat/"
 Environment="CATALINA_HOME=/opt/tomcat/"
 Environment="CATALINA_PID=/opt/tomcat/temp/tomcat.pid"
-Environment="CATALINA_OPTS=-Xms512M -Xmx1024M -server -XX:+UseParallelGC"
+Environment="CATALINA_OPTS=-Xms512M -Xmx1024M -server -XX:+UseParallelGC" 
+#En el caso de que Xmx1024M sea poco para el sistema podremos cambiarlo en el caso de que tenga mayor rendimiento relacionado 
+#con la memoria se cambia ni tanto ni poco en un punto intermedio
 
 ExecStart=/opt/tomcat/bin/startup.sh
 ExecStop=/opt/tomcat/bin/shutdown.sh
